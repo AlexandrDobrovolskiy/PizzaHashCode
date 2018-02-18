@@ -13,7 +13,7 @@ public class Pizza {
         String input = Files.loadFromFile(fileName);
         Parse(input);
     }
-    
+
     private void Parse(String input){
         int index = input.indexOf('\n');
         info = input.substring(0, index);
@@ -28,6 +28,9 @@ public class Pizza {
             }
         }
     }
+
+    //@TODO Slice method
+    //@TODO Think about it
 
 
     public static void main(String[] args){
