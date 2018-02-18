@@ -11,6 +11,10 @@ public class Pizza {
 
     public Pizza(String fileName){
         String input = Files.loadFromFile(fileName);
+        Parse(input);
+    }
+    
+    private void Parse(String input){
         int index = input.indexOf('\n');
         info = input.substring(0, index);
         String pizzaString = input.substring(index + 1, input.length());
