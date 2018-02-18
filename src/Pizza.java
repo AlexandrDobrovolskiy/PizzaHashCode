@@ -27,19 +27,19 @@ public class Pizza {
 
 
     public static void main(String[] args){
-        String EXAMPLE_FILENAME = "C:\\Users\\Alexandr\\Desktop\\Pizza\\big.in";
+        String EXAMPLE_FILENAME = "inputs\\example.in";
 
-        
+
         Pizza example = new Pizza(EXAMPLE_FILENAME);
 
-        //System.out.println(example.info + "\n\n");
+        System.out.println(example.info + "\n\n");
 
-        //for (int i = 0; i < example.pizza.length; i++){
-        //    for (int j = 0; j < example.pizza[i].length; j++){
-        //        System.out.print(example.pizza[i][j]);
-        //    }
-        //    System.out.println();
-        // }
+        for (int i = 0; i < example.pizza.length; i++){
+            for (int j = 0; j < example.pizza[i].length; j++){
+                System.out.print(example.pizza[i][j]);
+            }
+            System.out.println();
+        }
 
     }
 }
