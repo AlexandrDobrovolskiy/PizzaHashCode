@@ -1,12 +1,9 @@
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
-import java.io.IOException;
-import java.time.format.DateTimeFormatter;
+import java.util.List;
 
 public class Pizza {
     private String[][] pizza;
     private String info;
+    private List<Slice> slices;
 
 
     public Pizza(String fileName){
@@ -31,6 +28,8 @@ public class Pizza {
 
     //@TODO Slice method
     //@TODO Think about it
+
+
 
 
     public static void main(String[] args){
